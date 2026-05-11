@@ -75,12 +75,20 @@ async function fetchDetails(pmids) {
   if (!pmids.length) return [];
   const ids = pmids.join(",");
   const url = `${PUBMED_FETCH}?db=pubmed&id=${ids}&retmode=xml`;
+  console.error(`[DEBUG] Fetch URL: ${url}`);
   try {
     const resp = await fetch(url, {
       headers: { "User-Agent": "PeoplePleasingResearchBot/1.0" },
       signal: AbortSignal.timeout(60000),
     });
     const xml = await resp.text();
+    if (xml.length < 200) {
+      console.error(`[WARN] Short response (${xml.length} bytes): ${xml}`);
+    }
+    if (!resp.ok) {
+      console.error(`[ERROR] PubMed fetch HTTP ${resp.status}: ${xml.slice(0, 500)}`);
+      return [];
+    }
     return parsePubMedXml(xml);
   } catch (e) {
     console.error(`[ERROR] PubMed fetch failed: ${e.message}`);
