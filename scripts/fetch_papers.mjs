@@ -45,6 +45,8 @@ function getDateDaysAgo(days) {
   return d.toISOString().split("T")[0].replace(/-/g, "/");
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 function loadSummarizedPmids() {
   const path = resolve(__dirname, "..", "docs", "summarized_pmids.json");
   if (!existsSync(path)) return new Set();
@@ -58,42 +60,62 @@ function loadSummarizedPmids() {
 
 async function searchPubMed(query, retmax = 40) {
   const url = `${PUBMED_SEARCH}?db=pubmed&term=${encodeURIComponent(query)}&retmax=${retmax}&sort=date&retmode=json`;
-  try {
-    const resp = await fetch(url, {
-      headers: { "User-Agent": "PeoplePleasingResearchBot/1.0" },
-      signal: AbortSignal.timeout(30000),
-    });
-    const data = await resp.json();
-    return data?.esearchresult?.idlist || [];
-  } catch (e) {
-    console.error(`[ERROR] PubMed search failed: ${e.message}`);
-    return [];
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const resp = await fetch(url, {
+        headers: { "User-Agent": "PeoplePleasingResearchBot/1.0" },
+        signal: AbortSignal.timeout(30000),
+      });
+      const data = await resp.json();
+      if (data?.error) {
+        console.error(`[WARN] PubMed API error: ${data.error}, retrying in ${2 ** attempt}s...`);
+        await sleep(1000 * 2 ** attempt);
+        continue;
+      }
+      return data?.esearchresult?.idlist || [];
+    } catch (e) {
+      console.error(`[ERROR] PubMed search failed: ${e.message}`);
+      return [];
+    }
   }
+  return [];
 }
 
 async function fetchDetails(pmids) {
   if (!pmids.length) return [];
-  const ids = pmids.join(",");
-  const url = `${PUBMED_FETCH}?db=pubmed&id=${ids}&retmode=xml`;
-  console.error(`[DEBUG] Fetch URL: ${url}`);
-  try {
-    const resp = await fetch(url, {
-      headers: { "User-Agent": "PeoplePleasingResearchBot/1.0" },
-      signal: AbortSignal.timeout(60000),
-    });
-    const xml = await resp.text();
-    if (xml.length < 200) {
-      console.error(`[WARN] Short response (${xml.length} bytes): ${xml}`);
+  const BATCH_SIZE = 10;
+  const allPapers = [];
+  for (let i = 0; i < pmids.length; i += BATCH_SIZE) {
+    const batch = pmids.slice(i, i + BATCH_SIZE);
+    const ids = batch.join(",");
+    const url = `${PUBMED_FETCH}?db=pubmed&id=${ids}&retmode=xml`;
+    console.error(`[DEBUG] Fetch batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(pmids.length / BATCH_SIZE)} (${batch.length} PMIDs)`);
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const resp = await fetch(url, {
+          headers: { "User-Agent": "PeoplePleasingResearchBot/1.0" },
+          signal: AbortSignal.timeout(60000),
+        });
+        const xml = await resp.text();
+        if (xml.length < 200 && !xml.includes("<PubmedArticle")) {
+          console.error(`[WARN] Short/unexpected response (${xml.length}b): ${xml.slice(0, 200)}`);
+          if (attempt < 2) {
+            await sleep(2000 * (attempt + 1));
+            continue;
+          }
+          break;
+        }
+        const papers = parsePubMedXml(xml);
+        allPapers.push(...papers);
+        break;
+      } catch (e) {
+        console.error(`[ERROR] PubMed fetch failed: ${e.message}`);
+        if (attempt < 2) await sleep(2000 * (attempt + 1));
+      }
     }
-    if (!resp.ok) {
-      console.error(`[ERROR] PubMed fetch HTTP ${resp.status}: ${xml.slice(0, 500)}`);
-      return [];
-    }
-    return parsePubMedXml(xml);
-  } catch (e) {
-    console.error(`[ERROR] PubMed fetch failed: ${e.message}`);
-    return [];
+    if (i + BATCH_SIZE < pmids.length) await sleep(400);
   }
+  return allPapers;
 }
 
 function ensureArray(val) {
@@ -194,6 +216,7 @@ async function main() {
     const pmids = await searchPubMed(fullQuery, 40);
     pmids.forEach((id) => allPmids.add(id));
     console.error(`[INFO]   Found ${pmids.length} results`);
+    await sleep(400);
   }
 
   console.error(`[INFO] Total unique PMIDs: ${allPmids.size}`);
