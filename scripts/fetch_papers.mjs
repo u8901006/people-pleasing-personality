@@ -88,59 +88,83 @@ async function fetchDetails(pmids) {
   }
 }
 
+function ensureArray(val) {
+  if (val === undefined || val === null) return [];
+  return Array.isArray(val) ? val : [val];
+}
+
+function extractText(val) {
+  if (val === undefined || val === null) return "";
+  if (typeof val === "string" || typeof val === "number") return String(val);
+  return val["#text"] ? String(val["#text"]) : "";
+}
+
 function parsePubMedXml(xml) {
   const papers = [];
+  console.error(`[DEBUG] XML length: ${xml.length}`);
+
   const parser = new XMLParser({
     ignoreAttributes: false,
-    isArray: (name) => {
-      if (name === "PubmedArticle" || name === "AbstractText" || name === "Keyword") return true;
-      return false;
-    },
+    isArray: (name) =>
+      ["PubmedArticle", "AbstractText", "Keyword", "KeywordList"].includes(name),
   });
-  const result = parser.parse(xml);
-  const articles = result?.PubmedArticleSet?.PubmedArticle || [];
+
+  let result;
+  try {
+    result = parser.parse(xml);
+  } catch (e) {
+    console.error(`[ERROR] XML parse failed: ${e.message}`);
+    return papers;
+  }
+
+  const articles = ensureArray(result?.PubmedArticleSet?.PubmedArticle);
+  console.error(`[DEBUG] Parsed ${articles.length} PubmedArticle elements`);
 
   for (const article of articles) {
     try {
       const medline = article.MedlineCitation;
-      const art = medline?.Article;
+      if (!medline) continue;
+      const art = medline.Article;
       if (!art) continue;
 
-      const titleEl = art.ArticleTitle;
-      const title = typeof titleEl === "string" ? titleEl : titleEl?.["#text"] || "";
+      const title = extractText(art.ArticleTitle);
 
       let abstract = "";
-      const abstractTexts = art?.Abstract?.AbstractText || [];
+      const abstractTexts = ensureArray(art.Abstract?.AbstractText);
       const parts = [];
       for (const abs of abstractTexts) {
         const label = abs?.["@_Label"] || "";
-        const text = typeof abs === "string" ? abs : abs?.["#text"] || "";
+        const text = extractText(abs);
         if (label && text) parts.push(`${label}: ${text}`);
         else if (text) parts.push(text);
       }
       abstract = parts.join(" ").slice(0, 2000);
 
-      const journal = art?.Journal?.Title || "";
-      const pubDate = art?.Journal?.JournalIssue?.PubDate;
+      const journal = extractText(art.Journal?.Title);
+      const pubDate = art.Journal?.JournalIssue?.PubDate;
       let dateStr = "";
       if (pubDate) {
-        const y = pubDate.Year || "";
-        const m = pubDate.Month || "";
-        const d = pubDate.Day || "";
+        const y = extractText(pubDate.Year);
+        const m = extractText(pubDate.Month);
+        const d = extractText(pubDate.Day);
         dateStr = [y, m, d].filter(Boolean).join(" ");
       }
 
-      const pmid = String(medline?.PMID?.["#text"] || medline?.PMID || "");
+      const pmid = extractText(medline.PMID);
       const url = pmid ? `https://pubmed.ncbi.nlm.nih.gov/${pmid}/` : "";
 
       const keywords = [];
-      const kwList = medline?.KeywordList?.Keyword || [];
-      for (const kw of (Array.isArray(kwList) ? kwList : [kwList])) {
-        const t = typeof kw === "string" ? kw : kw?.["#text"];
-        if (t) keywords.push(t.trim());
+      const kwLists = ensureArray(medline.KeywordList);
+      for (const kwl of kwLists) {
+        for (const kw of ensureArray(kwl?.Keyword)) {
+          const t = extractText(kw);
+          if (t) keywords.push(t.trim());
+        }
       }
 
-      papers.push({ pmid, title, journal, date: dateStr, abstract, url, keywords });
+      if (title || pmid) {
+        papers.push({ pmid, title, journal, date: dateStr, abstract, url, keywords });
+      }
     } catch (e) {
       console.error(`[WARN] Failed to parse article: ${e.message}`);
     }
