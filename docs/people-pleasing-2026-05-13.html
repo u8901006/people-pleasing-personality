@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>People-Pleasing Personality &middot; 討好型人格研究文獻日報 &middot; 2026年5月13日</title>
+<meta name="description" content="2026年5月13日 討好型人格研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .utility-reason { font-size: 12px !important; color: var(--accent) !important; opacity: 0.85; margin-top: 4px; }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 120px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .links-banner .link-card { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); margin-bottom: 10px; }
+  .links-banner .link-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .links-banner .link-icon { font-size: 28px; flex-shrink: 0; }
+  .links-banner .link-text { font-size: 15px; font-weight: 600; color: var(--text); flex: 1; }
+  .links-banner .link-desc { font-size: 12px; color: var(--muted); font-weight: 400; }
+  .links-banner .link-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 80px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🤝</div>
+    <div class="header-text">
+      <h1>People-Pleasing Personality &middot; 討好型人格研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年5月13日</span>
+        <span class="badge badge-count">📊 11 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻顯示，依附焦慮在壓力情境（如戰爭或伴侶冷落）下會顯著加劇心理症狀與人際迎合行為，而認知分析治療（CAT）能直接改善住院患者「討好」等人際症狀，顯示針對人際互動模式的結構化介入具高度臨床價值。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div><div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#1</span>
+    <span class="emoji-icon">🎯</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>住院認知分析治療對情緒不穩定人格障礙症之療效：共製與混合方法單一受試者實驗設計</h3>
+  <p class="journal-source">Psychology and psychotherapy &middot; Inpatient cognitive analytic therapy for emotionally unstable personality disorder: A co-produced and mixed methods single case experimental design.</p>
+  <p>研究證實短期的認知分析治療能有效改善EUPD住院患者的「討好行為」與憂鬱焦慮症狀，且患者認為此改變具個人重要性與臨床意義。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">情緒不穩定人格障礙症（EUPD）住院患者</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">8次協議導向的認知分析治療（CAT）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">基線期（A階段）與治療期（B/C階段）的自我對照</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">每日討好行為量表得分下降，PHQ-9與GAD-7顯著改善</span></div>
+</div>
+  <p class="utility-reason">💡 直接將「討好行為」列為治療目標並證實其可改變性，為住院心理治療提供具體實作藍本。</p>
+  <div class="card-footer">
+    <span class="tag">討好型人格</span><span class="tag">心理治療</span><span class="tag">情感調節</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/41674199/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#2</span>
+    <span class="emoji-icon">💔</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>依附關係、感知伴侶冷落與報復行為：日記研究</h3>
+  <p class="journal-source">Journal of personality &middot; Attachment, Perceived Partner Phubbing, and Retaliation: A Daily Diary Study.</p>
+  <p>依附焦慮者在遭遇伴侶冷落時，會產生更多怨恨與報復行為，其背後動機實為尋求他人的支持與認同，顯示討好受挫後的防禦性轉換。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">196名處於親密關係中的伴侶</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">每日經歷的伴侶冷落（Phubbing）情境</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">伴侶冷落程度較低的日子</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">依附焦慮高者報復行為增加，且動機為「尋求支持與認同」</span></div>
+</div>
+  <p class="utility-reason">💡 釐清了依附焦慮者「報復」行為底層其實是對認同的渴望，有助於臨床治療中重新框架患者的人際衝突。</p>
+  <div class="card-footer">
+    <span class="tag">依附焦慮</span><span class="tag">依附關係</span><span class="tag">害怕拒絕</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/40776739/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#3</span>
+    <span class="emoji-icon">🛡️</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>戰鬥士兵的焦慮緩衝破壞：戰鬥威脅暴露、依附焦慮與意識形態威脅對心理健康與成癮的貢獻</h3>
+  <p class="journal-source">Anxiety, stress, and coping &middot; Anxiety-buffer disruption in combat soldiers: the contributions of exposure to combat-related threats, attachment anxiety, and ideological threat to mental health and addiction.</p>
+  <p>依附焦慮會加劇戰鬥威脅對創傷後壓力、憂鬱及物質成癮的負面影響，凸顯依附焦慮作為跨診斷風險因子的關鍵角色。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">357名以色列預備役士兵</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">戰爭中的戰鬥威脅暴露、高依附焦慮、政治世界觀威脅</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">低依附焦慮且無政治世界觀威脅的士兵</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">PTS症狀、憂鬱、焦慮及物質/行為成癮的嚴重度增加</span></div>
+</div>
+  <p class="utility-reason">💡 強調在創傷介入中必須評估並處理患者的依附焦慮，以預防症狀的惡化與共病。</p>
+  <div class="card-footer">
+    <span class="tag">依附焦慮</span><span class="tag">創傷</span><span class="tag">情感調節</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42116702/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#4</span>
+    <span class="emoji-icon">🕸️</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>大學生感覺處理敏感度與心理健康問題的交互關聯：網絡分析</h3>
+  <p class="journal-source">Acta psychologica &middot; The inter-relationships between sensory processing sensitivity and mental health problems among college students: A network analysis.</p>
+  <p>感覺處理敏感度中的「情緒/生理反應性」是連結人際敏感與憂鬱症狀的核心橋接變項，為高敏感族群的介入提供明確靶點。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">678名中國大學生</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">感覺處理敏感度（SPS）的各項向度（特別是情緒/生理反應性）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">SPS的其他向度（如低感覺閾值）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">人際敏感、強迫症狀與憂鬱症的網絡中心性連結強度</span></div>
+</div>
+  <p class="utility-reason">💡 協助臨床工作者辨識高敏感族群的人際困擾並非單純社交技巧問題，而是生理情緒反應性的延伸。</p>
+  <div class="card-footer">
+    <span class="tag">人際敏感</span><span class="tag">社會焦慮</span><span class="tag">情感調節</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42119455/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#5</span>
+    <span class="emoji-icon">🧠</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>壓力下的心理化與精神病性體驗：經驗取樣研究</h3>
+  <p class="journal-source">Psychology and psychotherapy &middot; Mentalizing under stress and psychotic experiences: An experience sampling study.</p>
+  <p>日常壓力會導致理解自身感受的困難（心理化受損），進而加劇當下及後續的精神病性體驗，顯示情感調節失能的連鎖反應。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">43名具精神病理風險的類精神病態樣本</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">日常生活中的情境壓力與心理化困難</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">低壓力且心理化功能良好的時刻</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">當下與滯後的精神病性體驗嚴重度</span></div>
+</div>
+  <p class="utility-reason">💡 支持在心理治療中優先處理壓力下的情緒辨識困難，以預防症狀的急性和延遲性惡化。</p>
+  <div class="card-footer">
+    <span class="tag">情感調節</span><span class="tag">自我壓抑</span><span class="tag">心理治療</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/41761375/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div><div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">🏥</span>
+    <span class="utility-low utility-sm">低</span>
+  </div>
+  <h3>瑞典產科與新生兒醫療道德困窘量表驗證與基準指數開發</h3>
+  <p class="journal-source">Scientific reports</p>
+  <p>開發並驗證了適用於產科與新生兒護理人員的道德困窘量表，高道德困窘與高壓力、職業倦怠及離職意願顯著相關。</p>
+  <div class="card-footer">
+    <span class="tag">職場倦怠</span><span class="tag">情緒勞動</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42120938/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">🦴</span>
+    <span class="utility-low utility-sm">低</span>
+  </div>
+  <h3>青少年閉孔內肌撕脫：罕見的骨盆撕脫性損傷模式</h3>
+  <p class="journal-source">Skeletal radiology</p>
+  <p>報告兩名青少年急性髖部疼痛案例，MRI顯示閉孔內肌骨盆起源處撕脫，強調其獨特的MRI表徵以避免誤診。</p>
+  <div class="card-footer">
+    
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42118243/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">💻</span>
+    <span class="utility-mid utility-sm">中</span>
+  </div>
+  <h3>基於NHANES資料的高血壓患者新型憂鬱症篩檢工具開發與視覺化</h3>
+  <p class="journal-source">Medicine</p>
+  <p>利用機器學習開發出一個包含12個預測因子的線上篩檢工具，能有效預測高血壓患者的憂鬱症風險，其中睡眠障礙為最強預測因子。</p>
+  <div class="card-footer">
+    <span class="tag">憂鬱症</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42116323/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">🔬</span>
+    <span class="utility-low utility-sm">低</span>
+  </div>
+  <h3>總N-乙醯天門冬胺酸：潛在的憂鬱症早期生物標誌物？</h3>
+  <p class="journal-source">Journal of affective disorders</p>
+  <p>發現非臨床個體的憂鬱症狀嚴重度與前帶狀回皮層的總N-乙醯天門冬胺酸濃度呈負相關，顯示其作為早期神經代謝脆弱性指標的潛力。</p>
+  <div class="card-footer">
+    <span class="tag">憂鬱症</span><span class="tag">神經科學</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42066849/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">♻️</span>
+    <span class="utility-low utility-sm">低</span>
+  </div>
+  <h3>典型塑膠廢棄物與園藝廢棄物的共水熱碳化：塑膠添加劑對水熱焦形成的影響</h3>
+  <p class="journal-source">Environmental research</p>
+  <p>探討雙酚A、硬脂酸鈣與硫酸鉛等塑膠添加劑在共水熱碳化過程中的作用，發現不同添加劑對水熱焦的產率與吸附效能有顯著差異。</p>
+  <div class="card-footer">
+    
+    <a href="https://pubmed.ncbi.nlm.nih.gov/41903725/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">❤️‍🩹</span>
+    <span class="utility-mid utility-sm">中</span>
+  </div>
+  <h3>探討早晚期妊娠心率變異性作為產後憂鬱與焦慮症狀的增量預測因子</h3>
+  <p class="journal-source">Psychoneuroendocrinology</p>
+  <p>研究指出懷孕早晚期的心率變異性（HRV）指標，能超越傳統心理量表，提供產後憂鬱與狀態焦慮的增量預測價值。</p>
+  <div class="card-footer">
+    <span class="tag">憂鬱症</span><span class="tag">創傷</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/41780318/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div><div class="topic-row">
+  <span class="topic-name">討好型人格</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">依附焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">人際敏感</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情感調節</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">憂鬱症</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">3</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">創傷</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">心理治療</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">職場倦怠</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情緒勞動</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">神經科學</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">討好型人格</span><span class="keyword">依附焦慮</span><span class="keyword">認知分析治療</span><span class="keyword">人際敏感</span><span class="keyword">情感調節</span><span class="keyword">跨診斷</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <span><span class="link-text">李政洋身心診所</span><br/><span class="link-desc">專業身心科門診服務</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <span><span class="link-text">訂閱電子報</span><br/><span class="link-desc">收到最新心理健康資訊</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <span><span class="link-text">Buy Me a Coffee</span><br/><span class="link-desc">支持我們繼續產出優質內容</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：glm-5-turbo</span>
+    <span><a href="https://github.com/u8901006/people-pleasing-personality">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
