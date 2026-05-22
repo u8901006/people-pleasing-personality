@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>People-Pleasing Personality &middot; 討好型人格研究文獻日報 &middot; 2026年5月22日</title>
+<meta name="description" content="2026年5月22日 討好型人格研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .utility-reason { font-size: 12px !important; color: var(--accent) !important; opacity: 0.85; margin-top: 4px; }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 120px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .links-banner .link-card { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); margin-bottom: 10px; }
+  .links-banner .link-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .links-banner .link-icon { font-size: 28px; flex-shrink: 0; }
+  .links-banner .link-text { font-size: 15px; font-weight: 600; color: var(--text); flex: 1; }
+  .links-banner .link-desc { font-size: 12px; color: var(--muted); font-weight: 400; }
+  .links-banner .link-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 80px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🤝</div>
+    <div class="header-text">
+      <h1>People-Pleasing Personality &middot; 討好型人格研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年5月22日</span>
+        <span class="badge badge-count">📊 6 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻顯示，依附焦慮與情感調節困難是導致內化症狀與適應不良行為的核心機制，而高壓醫療環境下的「自我犧牲」文化更凸顯了人際迎合與衝突迴避在臨床場域中的巨大代價。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div><div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#1</span>
+    <span class="emoji-icon">🏥</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>醫學與外科住院醫師中家庭形成的雙重束縛與彈性污名</h3>
+  <p class="journal-source">Journal of the American College of Surgeons &middot; Flexibility Stigma and the Double Bind of Family Formation in Medical and Surgical Residency.</p>
+  <p>研究揭示高壓醫療訓練環境中的「彈性污名」迫使住院醫師為了迎合「理想醫師」的自我犧牲規範，而放棄育兒與自我照顧權益，導致顯著的職場倦怠與人際衝突迴避。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">內科與外科住院醫師（含懷孕或育有嬰兒者、無嬰兒者及科主任）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">觀察並經歷「彈性污名」（使用工作生活彈性措施被視為不夠投入）的環境</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無直接對照組，為質性民族誌研究</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">產生專業與個人目標的雙重束縛、放權益、損害懷孕健康、人際關係與基本福祉</span></div>
+</div>
+  <p class="utility-reason">💡 直接點出醫療體系內隱性要求人際迎合與自我壓抑的結構性問題，有助於推動科室文化變革與保護住院醫師身心健康。</p>
+  <div class="card-footer">
+    <span class="tag">自我犧牲</span><span class="tag">衝突迴避</span><span class="tag">情緒勞動</span><span class="tag">職場倦怠</span><span class="tag">性別角色</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42165390/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#2</span>
+    <span class="emoji-icon">🧒</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>依附不安全感與內化症狀的門檻依賴連結：情感調節在臨床青少年中的角色</h3>
+  <p class="journal-source">Child psychiatry and human development &middot; Threshold-Dependent Links Between Attachment Insecurity and Internalizing Symptoms: The Role of Emotion Regulation in Clinical Youth.</p>
+  <p>針對臨床青少年的研究證實，依附焦慮與情感調節困難存在門檻效應，當調節能力低於特定臨界點時，母親依附焦慮會顯著惡化內化症狀，為精準介入提供依據。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">550名臨床轉介的兒童與青少年（8-18歲）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">評估依附不安全感（焦慮/逃避）與情感調節困難（DERS）的交互作用</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同情感調節困難程度（DERS分數門檻）的比較</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">內化症狀（SDQ測量），發現母親依附焦慮在 DERS>84 時危害最大，父親依附則在 DERS 68-123 區間有影響</span></div>
+</div>
+  <p class="utility-reason">💡 提供具體的 DERS 分數臨界值，協助兒童青少年心理人員判斷何時依附焦慮會引發實質的內化症狀，利於臨床資源分配。</p>
+  <div class="card-footer">
+    <span class="tag">依附焦慮</span><span class="tag">情感調節</span><span class="tag">依附關係</span><span class="tag">憂鬱症</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42165983/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#3</span>
+    <span class="emoji-icon">📱</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>成人依附與問題性社群媒體使用：一項每日測量研究</h3>
+  <p class="journal-source">Addictive behaviors &middot; Adult attachment and problematic social media use: a daily measure study.</p>
+  <p>每日日記研究顯示，具有高依附焦慮（沉迷型依附）的成年人，傾向將社群媒體作為補償人際迎合需求與緩解被拒絕恐懼的適應不良策略。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">89名社區成人（77.5%女性，平均年齡23.64歲）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">基線測量依附風格，並進行為期14天的每日問題性社群媒體使用（PSMU）追蹤</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同依附風格（焦慮/逃避/安全）間的每日症狀表現比較</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">沉迷型依附顯著預測更高的每日 PSMU 症狀（情緒修飾、戒斷、衝突等），而逃避型依附無顯著預測力</span></div>
+</div>
+  <p class="utility-reason">💡 提醒臨床人員在處理社群媒體成癮時，需評估背後的依附焦慮與討好型人際互動模式，以治本取代單純行為限制。</p>
+  <div class="card-footer">
+    <span class="tag">依附焦慮</span><span class="tag">害怕拒絕</span><span class="tag">人際迎合</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42068853/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#4</span>
+    <span class="emoji-icon">🤰</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>懷孕後半期診斷出胎兒異常後孕婦生活經驗的現象學研究</h3>
+  <p class="journal-source">Scientific reports &middot; Phenomenological study of the lived experiences of pregnant women following the diagnosis of fetal abnormalities in the second half of pregnancy.</p>
+  <p>面對胎兒異常診斷，孕婦常因社會不理解而經歷深刻的孤獨感，需高度依賴情感調節策略與內部信念來應對外界的評價與壓力。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">20名於懷孕後半期篩檢出胎兒異常的孕婦</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">進行半結構式深度訪談以探究生活經驗</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無對照組（現象學質性研究）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">萃取出7大主題，包含情感調節、社會支持互動與心理壓力，顯示外界誤解會加劇其罪惡感與心理負擔</span></div>
+</div>
+  <p class="utility-reason">💡 有助於產科與心理衛生團隊理解高壓力悲傷情境下，個案因應對外界期待的壓抑與情感調節需求，以提供更精準支持。</p>
+  <div class="card-footer">
+    <span class="tag">情感調節</span><span class="tag">罪惡感</span><span class="tag">社會焦慮</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42162159/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#5</span>
+    <span class="emoji-icon">🌙</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>褪黑激素與時間療法在治療晝夜節律紊亂與憂鬱症中的作用</h3>
+  <p class="journal-source">Current neuropharmacology &middot; The Role of Melatonin and Chronotherapy in the Treatment of Circadian Rhythm Disruption and Depression.</p>
+  <p>探討晝夜節律失調與憂鬱症的關聯，並指出時間療法與光照療法作為非藥物介入，能有效調節生理時鐘並改善情緒症狀。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">經歷晝夜節律紊亂伴隨憂鬱症的患者（文獻回顧）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">褪黑激素補充與時間療法/光照療法</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">傳統治療或未治療狀態（基於文獻對比）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">重新對齊晝夜節律、改善睡眠品質並產生抗憂鬱效果</span></div>
+</div>
+  <p class="utility-reason">💡 為長期因人際壓力、焦慮迎合導致睡眠與情緒失調的個案，提供生理層面的輔助治療選項與科學依據。</p>
+  <div class="card-footer">
+    <span class="tag">憂鬱症</span><span class="tag">神經科學</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42163662/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div><div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">🦷</span>
+    <span class="utility-low utility-sm">低</span>
+  </div>
+  <h3>英國武裝部隊中北約牙科健康分類模板的標準化</h3>
+  <p class="journal-source">Military medicine</p>
+  <p>此研究評估線上訓練對於統一英國軍醫應用北約牙科健康分類標準的效果，顯示訓練能顯著提升分類準確度並降低非戰鬥傷害風險。</p>
+  <div class="card-footer">
+    
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42161862/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div><div class="topic-row">
+  <span class="topic-name">依附焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情感調節</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">自我犧牲</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">職場倦怠</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+  <span class="topic-count">1</span>
+</div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">依附焦慮</span><span class="keyword">情感調節</span><span class="keyword">自我犧牲</span><span class="keyword">內化症狀</span><span class="keyword">情緒勞動</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <span><span class="link-text">李政洋身心診所</span><br/><span class="link-desc">專業身心科門診服務</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <span><span class="link-text">訂閱電子報</span><br/><span class="link-desc">收到最新心理健康資訊</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <span><span class="link-text">Buy Me a Coffee</span><br/><span class="link-desc">支持我們繼續產出優質內容</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：glm-5-turbo</span>
+    <span><a href="https://github.com/u8901006/people-pleasing-personality">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
