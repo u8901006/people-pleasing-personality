@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>People-Pleasing Personality &middot; 討好型人格研究文獻日報 &middot; 2026年7月18日</title>
+<meta name="description" content="2026年7月18日 討好型人格研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .utility-reason { font-size: 12px !important; color: var(--accent) !important; opacity: 0.85; margin-top: 4px; }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 120px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .links-banner .link-card { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); margin-bottom: 10px; }
+  .links-banner .link-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .links-banner .link-icon { font-size: 28px; flex-shrink: 0; }
+  .links-banner .link-text { font-size: 15px; font-weight: 600; color: var(--text); flex: 1; }
+  .links-banner .link-desc { font-size: 12px; color: var(--muted); font-weight: 400; }
+  .links-banner .link-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 80px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🤝</div>
+    <div class="header-text">
+      <h1>People-Pleasing Personality &middot; 討好型人格研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年7月18日</span>
+        <span class="badge badge-count">📊 6 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻雖無直接以「討好型人格」為主題之研究，但多篇文章從人際敏感、依附焦慮與親密關係暴力等周邊面向提供重要臨床脈絡，特別是青少年女性「被批評後感到難過」作為憂鬱網路核心節點的發現，為理解討好行為背後的情感調節機制與性別差異提供寶貴視角。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div><div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#1</span>
+    <span class="emoji-icon">👩‍🦰</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>青少年憂鬱症狀與情緒韌性的性別特定時間動態：交叉滯後網路與模擬介入研究</h3>
+  <p class="journal-source">Child and adolescent psychiatry and mental health &middot; Gender-specific temporal dynamics of depressive symptoms and emotional resilience in adolescents: a cross-lagged network and simulation-based intervention study.</p>
+  <p>女性青少年「被批評後感到難過」為憂鬱網路核心節點，顯示人際敏感在女性憂鬱發展中的關鍵角色，臨床應優先針對此特徵進行性別敏感式介入。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">818名青少年</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">模擬介入（增強正向情緒產生、處理人際相關失調）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同性別間的網路結構比較</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">憂鬱症狀網路活化程度、節點中心性</span></div>
+</div>
+  <p class="utility-reason">💡 明確指出女性人際敏感的核心節點位置，可直接引導針對討好型行為的性別敏感式介入策略設計。</p>
+  <div class="card-footer">
+    <span class="tag">人際敏感</span><span class="tag">憂鬱症</span><span class="tag">情感調節</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42469864/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#2</span>
+    <span class="emoji-icon">🌎</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>婦女受虐篩檢工具（WAST）跨文化適應至秘魯Awajún語言之心計量分析</h3>
+  <p class="journal-source">BMC women's health &middot; Transcultural adaptation to the Awajún language and psychometric analysis of the Woman Abuse Screening Tool (WAST) in Peruvian women.</p>
+  <p>成功將WAST工具跨文化適應至Awajún原住民語言，為原住民女性親密關係暴力篩檢提供有效工具，有助於識別可能以討好行為作為生存策略的受暴者。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">403名18歲以上秘魯Awajún女性</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">Awajún語版WAST篩檢工具</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">跨年齡、教育程度、婚姻狀態的測量不變性檢驗</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">驗證性因素分析適配度、信度（α=0.92）、收斂效度（AVE=0.61）</span></div>
+</div>
+  <p class="utility-reason">💡 提供跨文化親密關係暴力篩檢工具，有助於在原住民社群中識別可能伴隨討好型行為的受暴個案。</p>
+  <div class="card-footer">
+    <span class="tag">親密關係暴力</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42469775/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#3</span>
+    <span class="emoji-icon">📱</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>手機成癮與心理健康之時間關係：來自非臨床青少年的縱向網路分析</h3>
+  <p class="journal-source">Digital health &middot; Temporal relationships between mobile phone addiction and mental health: A longitudinal network analysis study from non-clinical adolescents.</p>
+  <p>人際敏感為手機成癮與心理健康症狀網路中的關鍵節點，顯示數位時代人際困難如何加劇逃避行為，臨床應關注人際功能修復。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">1,479名青少年（平均15.28歲）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性縱向研究）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">性別子群體網路結構比較</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">手機成癮與心理健康症狀的時間性、同時性及受試者間關聯</span></div>
+</div>
+  <p class="utility-reason">💡 將人際敏感置於成癮與心理健康網路中分析，有助於理解討好型個案可能出現的數位逃避行為模式。</p>
+  <div class="card-footer">
+    <span class="tag">人際敏感</span><span class="tag">社會焦慮</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42465111/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#4</span>
+    <span class="emoji-icon">⌚</span>
+    <span class="utility-low">低實用性</span>
+  </div>
+  <h3>心血管患者穿戴裝置相關之負面心理與行為影響：護理評估與衛教意涵之範圍審查</h3>
+  <p class="journal-source">BMC nursing &middot; Negative psychological and behavioral effects associated with wearable devices in cardiovascular patients: a scoping review with implications for nursing assessment and patient education.</p>
+  <p>穿戴裝置可能導致過度自我監測與重複尋求保證等行為，此類依附焦慮表現值得臨床人員在裝置處方前進行風險評估。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">心血管疾病患者</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">穿戴式監測裝置使用</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無直接對照組（範圍審查）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">健康焦慮、警報相關擔憂、過度自我監測、裝置依賴、自我管理信心受損</span></div>
+</div>
+  <p class="utility-reason">💡 重複尋求保證行為與依附焦慮相關，可作為理解討好型人格在醫療情境表現的參考。</p>
+  <div class="card-footer">
+    <span class="tag">依附焦慮</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42464272/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#5</span>
+    <span class="emoji-icon">🧪</span>
+    <span class="utility-low">低實用性</span>
+  </div>
+  <h3>青少年男性新精神活性物質使用者之人格基礎亞群辨識與心理症狀模式：精準介入意涵</h3>
+  <p class="journal-source">BMC psychiatry &middot; Personality-based subgroup identification and psychological symptom patterns in adolescent male new psychoactive substance users: implications for targeted intervention.</p>
+  <p>青少年NPS使用者呈現顯著人格偏差，包括高緊張與低情緒穩定，提供高風險族群人格評估的精準介入框架。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">60名青少年男性新精神活性物質使用者（平均17.2歲）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（橫斷面研究）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">中國青少年常模</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">16PF人格因素偏差、PDQ-4+人格障礙特徵、SCL-90-R心理症狀嚴重度</span></div>
+</div>
+  <p class="utility-reason">💡 雖非直接探討討好型人格，但提供高風險族群人格評估與亞群分類的方法學參考。</p>
+  <div class="card-footer">
+    <span class="tag">憂鬱症</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42469757/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div><div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">🏥</span>
+    <span class="utility-low utility-sm">低</span>
+  </div>
+  <h3>COVID-19期間心理健康服務利用的種族與族群差異</h3>
+  <p class="journal-source">Journal of racial and ethnic health disparities</p>
+  <p>種族少數族群在疫情期間使用心理健康服務的機率顯著低於非西裔白人，顯示結構性障礙持續存在。</p>
+  <div class="card-footer">
+    <span class="tag">社會焦慮</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/40327290/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div><div class="topic-row">
+  <span class="topic-name">人際敏感</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">憂鬱症</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">3</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">依附焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">親密關係暴力</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情感調節</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">社會焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">人際敏感</span><span class="keyword">憂鬱症</span><span class="keyword">依附焦慮</span><span class="keyword">親密關係暴力</span><span class="keyword">情感調節</span><span class="keyword">性別差異</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <span><span class="link-text">李政洋身心診所</span><br/><span class="link-desc">專業身心科門診服務</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <span><span class="link-text">訂閱電子報</span><br/><span class="link-desc">收到最新心理健康資訊</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <span><span class="link-text">Buy Me a Coffee</span><br/><span class="link-desc">支持我們繼續產出優質內容</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：glm-5-turbo</span>
+    <span><a href="https://github.com/u8901006/people-pleasing-personality">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
