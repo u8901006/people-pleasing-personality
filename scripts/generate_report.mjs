@@ -6,10 +6,10 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const API_BASE = process.env.ZHIPU_API_BASE || "https://open.bigmodel.cn/api/coding/paas/v4";
-const MODELS = (process.env.ZHIPU_MODELS || "glm-5-turbo,glm-4.7,glm-4.7-flash").split(",");
-const MAX_TOKENS = parseInt(process.env.ZHIPU_MAX_TOKENS || "50000", 10);
-const TIMEOUT_MS = parseInt(process.env.ZHIPU_TIMEOUT || "480000", 10);
+const API_BASE = 'https://integrate.api.nvidia.com/v1';
+const MODELS = ['nvidia/nemotron-3-super-120b-a12b', 'nvidia/nemotron-3-nano-30b-a3b'];
+const MAX_TOKENS = 16384;
+const TIMEOUT_MS = parseInt(process.env.NVIDIA_TIMEOUT || "480000", 10);
 const MAX_RETRIES = 3;
 
 const SYSTEM_PROMPT = `你是「討好型人格 / 人際迎合」研究領域的資深研究員與科學傳播者。你的任務是：
@@ -132,9 +132,9 @@ ${papersText}
               { role: "system", content: SYSTEM_PROMPT },
               { role: "user", content: prompt },
             ],
-            temperature: 0.3,
-            top_p: 0.9,
-            max_tokens: MAX_TOKENS,
+            temperature: 1.0,
+            top_p: 0.95,
+            max_tokens: MAX_TOKENS, stream: false, chat_template_kwargs: { enable_thinking: false },
           }),
           signal: AbortSignal.timeout(TIMEOUT_MS),
         });
@@ -345,7 +345,7 @@ function generateHtml(analysis) {
       <div class="header-meta">
         <span class="badge badge-date">📅 ${dateDisplay}</span>
         <span class="badge badge-count">📊 ${totalCount} 篇文獻</span>
-        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
       </div>
     </div>
   </header>
@@ -391,9 +391,9 @@ function generateHtml(analysis) {
 }
 
 async function main() {
-  const apiKey = process.env.ZHIPU_API_KEY;
+  const apiKey = process.env.NVIDIA_API_KEY;
   if (!apiKey) {
-    console.error("[ERROR] ZHIPU_API_KEY environment variable is required");
+    console.error("[ERROR] NVIDIA_API_KEY environment variable is required");
     process.exit(1);
   }
 
