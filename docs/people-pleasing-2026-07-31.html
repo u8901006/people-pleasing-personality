@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>People-Pleasing Personality &middot; 討好型人格研究文獻日報 &middot; 2026年7月31日</title>
+<meta name="description" content="2026年7月31日 討好型人格研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .utility-reason { font-size: 12px !important; color: var(--accent) !important; opacity: 0.85; margin-top: 4px; }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 120px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .links-banner .link-card { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); margin-bottom: 10px; }
+  .links-banner .link-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .links-banner .link-icon { font-size: 28px; flex-shrink: 0; }
+  .links-banner .link-text { font-size: 15px; font-weight: 600; color: var(--text); flex: 1; }
+  .links-banner .link-desc { font-size: 12px; color: var(--muted); font-weight: 400; }
+  .links-banner .link-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 80px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🤝</div>
+    <div class="header-text">
+      <h1>People-Pleasing Personality &middot; 討好型人格研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年7月31日</span>
+        <span class="badge badge-count">📊 4 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於神經科學與跨文化心理健康，但未直接涉及討好型人格或人際迎合；趨勢顯示科技輔助診斷與腸腦軸研究熱度高，跨文化適應性審視成為少數與人際動態相關的議題。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div><div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#1</span>
+    <span class="emoji-icon">🧠</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>基於短對話的科技輔助自閉症與邊緣型人格障礙鑑別診斷模型：證明面部表情與語語同步性具高預測價值</h3>
+  <p class="journal-source">BMJ mental health &middot; Prediction models for highly scalable technology-assisted differential diagnostics of autism spectrum disorder.</p>
+  <p>該證明概念研究透過分析20分鐘的雙人對話，利用面部表情、語音模式與人際同步性特徵，達成82%的準確率區分自閉症譜系障礙與邊緣型人格障礙，顯示科技輔助工具在辨識人際互動模式上的潛力，間接提供理解人際迎合行為之客觀測量途徑。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">參與雙人對話的個體（n=120），分為自閉症譜系障礙相關、邊緣型人格障礙相關與對照組互動夥伴</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">從雙人對話中擷取超過800種特徵（語音模式、面部表情、運動量、人際同步性）並訓練疊加線性支持向量機模型</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">對照組為無臨床診斷的互動夥伴</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">基模型在區分自閉症與邊緣型人格障礙互動夥伴時皆高於隨機機會；堆疊所有概念相關特徵的基模型後，達到近82%的平衡準確率，僅需20分鐘對話</span></div>
+</div>
+  <p class="utility-reason">💡 雖未直接測量討好型人格，但其能客觀量化人際同步性與非語言溝通模式，為未來研究人際迎合行為的生物行為標誌提供技術基礎</p>
+  <div class="card-footer">
+    <span class="tag">人際迎合</span><span class="tag">依附焦慮</span><span class="tag">情感調節</span><span class="tag">神經科學</span><span class="tag">心理治療</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42532625/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#2</span>
+    <span class="emoji-icon">🧘</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>華裔青少年對正念冥想影片的文化敏感度評核：發現『平靜感』為核心價值，口音與年齡適切性為主要障礙</h3>
+  <p class="journal-source">Asian American journal of psychology &middot; Brief Mindfulness Meditation Videos: Cultural Sensitivity Review by Chinese American Adolescents.</p>
+  <p>透過20位華裔青少年評鑑四段正念冥想影片，結果顯示『平靜感』被普遍重視，但口音難以理解與年齡不適切顯著降低參與度，凸顯文化適配在情緒調節介入中的關鍵角色。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">20位華裔青少年（年齡14-18歲）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">根據語言、音頻與視覺元素評估四段簡短正念冥想影片的文化敏感度</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無對照組，為初步文化適切性評估研究</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">量化結果顯示對文化與語言適切性強烈認同，但敘述者聲音與影片美學評分分異；質化分析提炼出八個主題，其中『平靜感』最受重視，文化相關性與設計元素為參與關鍵因素</span></div>
+</div>
+  <p class="utility-reason">💡 揭示文化適配如何影響少數族群青少年對正念練習的接受度，間接支持設計更具包容性的情緒調節介入，對減少人際迎合壓力下的焦慮具有潛在臨床啟示</p>
+  <div class="card-footer">
+    <span class="tag">情感調節</span><span class="tag">文化敏感度</span><span class="tag">青少年心理健康</span><span class="tag">正念</span><span class="tag">人際迎合</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42529315/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div><div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">🦠</span>
+    <span class="utility-high utility-sm">高</span>
+  </div>
+  <h3>腸腦軸在神經精神疾病中的作用：機制、進展與臨床應用的全面綜述</h3>
+  <p class="journal-source">Brain research bulletin</p>
+  <p>闡明腸腦免疫網絡在七種主要神經精神疾病中的共享病理機制，強調 microbiota-targeted 干預的精準醫療潛力，同時指出精神藥物對腸道微生物群的副作用為研究混雜因子。</p>
+  <div class="card-footer">
+    <span class="tag">神經科學</span><span class="tag">腸腦軸</span><span class="tag">憂鬱症</span><span class="tag">焦慮症</span><span class="tag">自閉症譜系障礙</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42532353/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div>
+<div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">💸</span>
+    <span class="utility-mid utility-sm">中</span>
+  </div>
+  <h3>功能性消化不良的經濟負擔：直接與間接成本的疾病負擔分析</h3>
+  <p class="journal-source">United European gastroenterology journal</p>
+  <p>功能性消化不良患者年均總成本達12,192歐元，其中間接成本佔84%，而疾病特定生活品質（非症狀嚴重程度或焦慮/憂鬱）是唯一顯著預測總成本的患者特徵。</p>
+  <div class="card-footer">
+    <span class="tag"> psychosomatic</span><span class="tag">品質生活</span><span class="tag">焦慮症</span><span class="tag">憂鬱症</span><span class="tag">腦腸相關疾病</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42530136/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div><div class="topic-row">
+  <span class="topic-name">人際迎合</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情感調節</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">文化敏感度</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">依附焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">神經科學</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">腸腦軸</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+  <span class="topic-count">1</span>
+</div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">人際迎合</span><span class="keyword">情感調節</span><span class="keyword">文化敏感度</span><span class="keyword">腸腦軸</span><span class="keyword">科技輔助診斷</span><span class="keyword">正念</span><span class="keyword">經濟負擔</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <span><span class="link-text">李政洋身心診所</span><br/><span class="link-desc">專業身心科門診服務</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <span><span class="link-text">訂閱電子報</span><br/><span class="link-desc">收到最新心理健康資訊</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <span><span class="link-text">Buy Me a Coffee</span><br/><span class="link-desc">支持我們繼續產出優質內容</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/people-pleasing-personality">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
