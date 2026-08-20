@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>People-Pleasing Personality &middot; 討好型人格研究文獻日報 &middot; 2026年8月20日</title>
+<meta name="description" content="2026年8月20日 討好型人格研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .utility-reason { font-size: 12px !important; color: var(--accent) !important; opacity: 0.85; margin-top: 4px; }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 120px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .links-banner .link-card { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); margin-bottom: 10px; }
+  .links-banner .link-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .links-banner .link-icon { font-size: 28px; flex-shrink: 0; }
+  .links-banner .link-text { font-size: 15px; font-weight: 600; color: var(--text); flex: 1; }
+  .links-banner .link-desc { font-size: 12px; color: var(--muted); font-weight: 400; }
+  .links-banner .link-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 80px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🤝</div>
+    <div class="header-text">
+      <h1>People-Pleasing Personality &middot; 討好型人格研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年8月20日</span>
+        <span class="badge badge-count">📊 3 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於憂鬱症的預臨床模型、罕見牙科病變及HIV移植受者的長效抗病毒療法，未直接涉及討好型人格或人際迎合主題，但憂鬱症與依附焦慮具關聯性，提醒臨床需留意人格特質與情感調節在精神疾病中的併發風險。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div><div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#1</span>
+    <span class="emoji-icon">🧠</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>憂鬱症預臨床藥物發現模型的最新文獻綜述：強調多模式與內表型驅動方法以提升轉譯成功率</h3>
+  <p class="journal-source">Expert opinion on drug discovery &middot; Models of depression for preclinical drug discovery and development: an update of the literature.</p>
+  <p>本綜述指出單一動物模型無法涵蓋憂鬱症複雜性，未來藥物發展需結合多模式方法與人類相關資料，並考慮性別差異與亞型分層（如炎症型、激素敏感型），以提升預測效度與臨床轉譯成功率。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">憂鬱症動物模型（壓力、發育、遺傳、神經內分泌、免疫、代謝等）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">各種預臨床憂鬱症模型</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">模型間之面效度、構念效度與預測效度評估</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">共同致病機制包含HPA軸失調、神經發炎、單胺與谷氨酸失衡、神經可塑性受損；強調需整合人類資料與性別敏感設計以提升藥物預測效度</span></div>
+</div>
+  <p class="utility-reason">💡 雖未直接研究討好型人格，但憂鬱症與人際迎合、依附焦慮高度共病，了解其生物基礎有助於辨識具特定病理類型（如應激相關型）的患者，指導個人化治療</p>
+  <div class="card-footer">
+    <span class="tag">憂鬱症</span><span class="tag">情感調節</span><span class="tag">神經科學</span><span class="tag">心理治療</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42615812/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#2</span>
+    <span class="emoji-icon">💉</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>長效可注射抗病毒療法（CAB/RPV）在腎肝移植HIV受者中維持病毒抑制顯示初步安全性與效果</h3>
+  <p class="journal-source">Journal of acquired immune deficiency syndromes (1999) &middot; Use of Long-acting Injectable Antiretroviral Therapy in Kidney and Liver Transplant Recipients with HIV.</p>
+  <p>在九位移植受者（七腎、二肝）中，CAB/RPV維持HIV病毒抑制且無移植物喪失，雖有一例急性排斥與一例創傷死亡，顯示其在複雜免疫抑制背景下的潛在應用價值。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">移植前HIV病毒已抑制的腎肝移植受者（n=9）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">長效可注射抗病毒療法（cabotegravir/rilpivirine, CAB/RPV）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">既往口服ART（隱含）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">所有參與者維持HIV抑制；無移植物喪失；一肝受者急性排斥；一參與者因創傷死亡</span></div>
+</div>
+  <p class="utility-reason">💡 雖非直接主題，但HIV受者常伴有創傷史、依附不安及人際困境，長效ART減少服藥負担可能間接減輕壓力與提升治療依從性，對具人際迎合傾向之患者具潛在心理衛生益處</p>
+  <div class="card-footer">
+    <span class="tag">創傷</span><span class="tag">依附關係</span><span class="tag">情感調節</span><span class="tag">神經科學</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42612248/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#3</span>
+    <span class="emoji-icon">🦷</span>
+    <span class="utility-low">低實用性</span>
+  </div>
+  <h3>下顎頰側叉縫囊腫之罕見病例報告：利用CBCT與客製化手術導板實現微創保牙治療</h3>
+  <p class="journal-source">Case reports in dentistry &middot; Diagnosis and Guided Surgical Management of a Mandibular Buccal Bifurcation Cyst: A Case Report.</p>
+  <p>透過牙髓活力檢查、CBCT及3D印製手術導板，成功診斷並保守切除一例下顎頰側叉縫囊腫（MBBC），避免不必要的根管治療，術後一年牙齒維持活力與骨 healing良好。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">一位健康16歲女性，伴有下顎左側第二磐牙（#18）之乳白色骨性擴增及膿性分泌物</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">以CBCT為基礎的客製化3D印製手術導板引導下之囊腫剔除術</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">傳統根管治療（因誤診為慢性根尖病變而可能被過度處置）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">保留牙髓活力；術後一年探針深度正常；CBCT顯示滿意骨 healing；無需端odontic處置</span></div>
+</div>
+  <p class="utility-reason">💡 雖為牙科罕見病例，但誤診過程反應出患者可能因害怕拒絕牙科建議或過度依賴醫師判斷（人際迎合）而延遲求第二意見，提醒臨床醫師需警惕病人過度配合可能掩蓋真實病況</p>
+  <div class="card-footer">
+    <span class="tag">害怕拒絕</span><span class="tag">人際迎合</span><span class="tag">自我壓抑</span><span class="tag">衝突迴避</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42614738/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div></div>
+
+  
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div><div class="topic-row">
+  <span class="topic-name">討好型人格</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:0%"></div></div>
+  <span class="topic-count">0</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">人際迎合</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">依附焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:0%"></div></div>
+  <span class="topic-count">0</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">害怕拒絕</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">自我壓抑</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">衝突迴避</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">憂鬱症</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">創傷</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">依附關係</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情感調節</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">3</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">神經科學</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">憂鬱症</span><span class="keyword">依附焦慮</span><span class="keyword">人際迎合</span><span class="keyword">HPA axis</span><span class="keyword">HIV</span><span class="keyword">移植</span><span class="keyword">牙科囊腫</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <span><span class="link-text">李政洋身心診所</span><br/><span class="link-desc">專業身心科門診服務</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <span><span class="link-text">訂閱電子報</span><br/><span class="link-desc">收到最新心理健康資訊</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <span><span class="link-text">Buy Me a Coffee</span><br/><span class="link-desc">支持我們繼續產出優質內容</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/people-pleasing-personality">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
