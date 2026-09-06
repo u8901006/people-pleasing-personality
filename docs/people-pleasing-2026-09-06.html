@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>People-Pleasing Personality &middot; 討好型人格研究文獻日報 &middot; 2026年9月6日</title>
+<meta name="description" content="2026年9月6日 討好型人格研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .utility-reason { font-size: 12px !important; color: var(--accent) !important; opacity: 0.85; margin-top: 4px; }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 120px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .links-banner .link-card { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); margin-bottom: 10px; }
+  .links-banner .link-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .links-banner .link-icon { font-size: 28px; flex-shrink: 0; }
+  .links-banner .link-text { font-size: 15px; font-weight: 600; color: var(--text); flex: 1; }
+  .links-banner .link-desc { font-size: 12px; color: var(--muted); font-weight: 400; }
+  .links-banner .link-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 80px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🤝</div>
+    <div class="header-text">
+      <h1>People-Pleasing Personality &middot; 討好型人格研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年9月6日</span>
+        <span class="badge badge-count">📊 6 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於依附關係與情感調節之間的關聯，尤其顯示依附焦慮與回避如何透過不適應的情感調節策略（如反覆思索、情感迴避）影響心理健康與身體創傷恢復；雖未直接探討「討好型人格」，但多項研究間接支持其核心機制——人際迎合行為可能源於不安全依附與情感調節失調。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div><div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#1</span>
+    <span class="emoji-icon">🤱</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>成人依附樣式與產後心理創傷症狀：澳洲產婦橫斷面調查</h3>
+  <p class="journal-source">Midwifery &middot; Adult attachment styles and psychological birth trauma symptoms: A cross-sectional survey of postpartum women in Australia.</p>
+  <p>依附焦慮與回避皆顯著預測較嚴重的產後心理創傷症狀與較低的出生滿意度，安全依附則為保護因子，凸顯依附安全在產後恢復中的關鍵調節角色。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">940名澳洲產婦（產後≤24個月，經陰道單胎分娩）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（橫斷面觀察研究）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">依附焦慮與回避為連續變項；次級分析以中位數切分為四象限（安全型、焦慮型、回避型、無解決/混亂型）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">較高依附焦慮與回避關聯較嚴重產後創傷症狀（City Birth Trauma Scale）與較低出生滿意度（Australian Birth Satisfaction Scale-Revised）；無解決/混亂型依附者症狀最嚴重</span></div>
+</div>
+  <p class="utility-reason">💡 提供明確臨床依據：產後評估應納入依附樣式篩選，尤其焦慮/回避型婦女需加強情感調節支持與創傷知照護，可預防長期心理創傷。</p>
+  <div class="card-footer">
+    <span class="tag">依附焦慮</span><span class="tag">情感調節</span><span class="tag">創傷</span><span class="tag">產後期</span><span class="tag">依附關係</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42700730/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#2</span>
+    <span class="emoji-icon">🎧</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>依附樣式在不健康音樂使用中的作用：焦慮與迴避如何透過情感調節策略導致不適應行為</h3>
+  <p class="journal-source">Musicae scientiae : the journal of the European Society for the Cognitive Sciences of Music &middot; The role of attachment style in unhealthy music use.</p>
+  <p>焦慮依附透過反覆思索導致反覆聆聽音樂；迴避依附透過情感迴避導致回避性音樂使用，證實不健康音樂使用是依附不安全透過情感調節失調的間接表現。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">224名參與者（社區樣本）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（橫斷面相關研究）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">安全依附 vs 焦慮依附 vs 迴避依附（透過問卷測量）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">焦慮依附 → 增加反覆思索 → 增加反覆聆聽音樂；迴避依附 → 增加情感迴避 → 增加回避性音樂使用；情感調節傾向完全中介此關聯</span></div>
+</div>
+  <p class="utility-reason">💡 首次證明依附樣式透過情感調節機制影響日常應對行為（如音樂使用），為臨床提供新觀角：評估不適應應對策略時，應探討其依附根源，而非僅看表現。</p>
+  <div class="card-footer">
+    <span class="tag">依附焦慮</span><span class="tag">情感調節</span><span class="tag">人際迎合</span><span class="tag">自我壓抑</span><span class="tag">衝突迴避</span><span class="tag">心理治療</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42699407/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#3</span>
+    <span class="emoji-icon">💔</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>『你是個母親，你就該受苦』：孟加拉國農村女性在剖腹產後恢復中的溝通韌性與家長父權結構的互動</h3>
+  <p class="journal-source">Health communication &middot; "You Are a Mother, You Have to Suffer": Communicative Resilience During Post-Cesarean Recovery Among Rural Bangladeshi Women.</p>
+  <p>農村孟加拉婦女在剖腹產後恢復中，透過母親支持與線上網絡進行韌性適應，但其表現常被用來強化『女性應忍耐痛苦』的性別規範，顯示人際迎合如何被社會結構操縱為自我犧牲。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">20名孟加拉國農村剖腹產婦女（產後6–12個月）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">質性半結構訪談（孟加拉語）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無對照組（質性描述性研究）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">兩大主題：(1) 持續的恐懼、痛苦與沉默；(2) 資源與限制的社會網絡。婦女透過母親支持與線上連線進行『預期韌性’，但這種適應常服務於維護父權秩序而非真正自我照護。</span></div>
+</div>
+  <p class="utility-reason">💡 揭示人際迎合（如沉默、忍耐）在集體主義、父權文化中如何被正化為‘美德’，臨床工作者需警惕將文化規範誤認為健康適應，特別在跨文化產後照護中。</p>
+  <div class="card-footer">
+    <span class="tag">人際迎合</span><span class="tag">自我犧牲</span><span class="tag">性別角色</span><span class="tag">集體主義</span><span class="tag">創傷</span><span class="tag">情感調節</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42700103/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#4</span>
+    <span class="emoji-icon">🧠</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>認知彈性如何成為極端信念形成的保護因子：情感與認知彈性的互補角色</h3>
+  <p class="journal-source">Scandinavian journal of psychology &middot; The Role of Flexibility in the Formation and Maintenance of Extreme Beliefs: A Narrative Scoping Review.</p>
+  <p>認知彈性、情感彈性、心理彈性與信念彈性四種形式共同促進適應性應對（如證據整合、情緒調節、容忍不確定性），其缺失極端信念發展的風險因子，提醒人際迎合者可能因過度適應他人而喪失自身彈性。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">理論文獻綜述（無實証樣本）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">敘事範圍文獻回顧</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">四種彈性類型：認知的、情感的、心理的、信念的</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">彈性促進證據整合、批判性思考、情緒調節、容忍不確定性；其激活依賴情境情感價值；認知與情感彈性互補作為極端信念的保護因子</span></div>
+</div>
+  <p class="utility-reason">💡 雖未直接研究人際迎合，但提供重要理論框架：過度人際適應（如討好）可能反映『過度適應他人』而非真正彈性，臨床可評估個人是否在人際情境中喪失認知與情感彈性。</p>
+  <div class="card-footer">
+    <span class="tag">情感調節</span><span class="tag">認知行為治療</span><span class="tag">心理治療</span><span class="tag">自我壓抑</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42068245/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#5</span>
+    <span class="emoji-icon">🏥</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>兒童非骨折性腔室症候網：行為指標（焦慮、煩躁、止痛需求）比傳統神經血管徵狀更早期可靠</h3>
+  <p class="journal-source">Journal of children's orthopaedics &middot; Acute, chronic, and non-fracture-related compartment syndrome in children. A current concepts review.</p>
+  <p>兒童腔室症候早期診斷應依賴行為指標——增加焦慮、煩躁與止痛需求（3As），而非依賴晚期神經血管徵狀（5Ps），提醒醫師關注非語言兒童的情緒與行為變化。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">兒童（文獻回顧，無具體樣本）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（文獻綜述）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">傳統『5Ps』（疼痛、麻木、蒼白、無腳搏動、麻痹） vs 新興『3As』（焦慮、煩躁、止痛需求）</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">3As 為更早期、更可靠的診斷線索；非骨折性腔室症候診斷常延誤，導致肌肉壞死；早期fasciotomy仍為標準，但兒童組織再生力強，延遲傷口閉合亦可成功</span></div>
+</div>
+  <p class="utility-reason">💡 雖非心理主題，但強調『行為與情感變化為生理危機的早期警訊』，具啟發性：討好型人格者可能壓抑不適，臨床應警惕其『過度安靜或過度協力』是否掩飾真實痛苦。</p>
+  <div class="card-footer">
+    <span class="tag">焦慮</span><span class="tag">創傷</span><span class="tag">神經科學</span><span class="tag">情感調節</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42698594/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div><div class="news-card">
+  <div class="card-header-row">
+    <span class="emoji-sm">🐶</span>
+    <span class="utility-low utility-sm">低</span>
+  </div>
+  <h3>陰部穩固術聯鎖螺絲與PMMA在玩具犬第一頸椎不穩定症中的應用：一例報告</h3>
+  <p class="journal-source">Brazilian journal of veterinary medicine</p>
+  <p>在一隻5月齊、0.8kg的約克夏梗中，經C1-C2腹側穩固加C3固定（螺絲+PMMA）後，7天恢復行走，165天神經功能優異恢復，證明此技術在微小型犬中安全有效。</p>
+  <div class="card-footer">
+    <span class="tag">神經科學</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42699502/" target="_blank" rel="noopener">PubMed →</a>
+  </div>
+</div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div><div class="topic-row">
+  <span class="topic-name">依附焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">3</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">人際迎合</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情感調節</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">3</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">創傷</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">自我犧牲</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">依附關係</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">認知彈性</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">集體主義</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">性別角色</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">依附焦慮</span><span class="keyword">人際迎合</span><span class="keyword">情感調節</span><span class="keyword">創傷</span><span class="keyword">自我犧牲</span><span class="keyword">依附關係</span><span class="keyword">認知彈性</span><span class="keyword">集體主義</span><span class="keyword">性別角色</span><span class="keyword">焦慮</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <span><span class="link-text">李政洋身心診所</span><br/><span class="link-desc">專業身心科門診服務</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <span><span class="link-text">訂閱電子報</span><br/><span class="link-desc">收到最新心理健康資訊</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <span><span class="link-text">Buy Me a Coffee</span><br/><span class="link-desc">支持我們繼續產出優質內容</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/people-pleasing-personality">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
