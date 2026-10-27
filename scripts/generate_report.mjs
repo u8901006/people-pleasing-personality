@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const API_BASE = 'https://integrate.api.nvidia.com/v1';
-const MODELS = ['nvidia/nemotron-3-super-120b-a12b', 'nvidia/nemotron-3-nano-30b-a3b'];
+const MODELS = ['nvidia/nemotron-3-ultra-550b-a55b'];
 const MAX_TOKENS = 16384;
 const TIMEOUT_MS = parseInt(process.env.NVIDIA_TIMEOUT || "480000", 10);
 const MAX_RETRIES = 3;
