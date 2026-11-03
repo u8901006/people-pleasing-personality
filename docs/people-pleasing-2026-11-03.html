@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>People-Pleasing Personality &middot; 討好型人格研究文獻日報 &middot; 2026年11月3日</title>
+<meta name="description" content="2026年11月3日 討好型人格研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .utility-reason { font-size: 12px !important; color: var(--accent) !important; opacity: 0.85; margin-top: 4px; }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 120px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .links-banner .link-card { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); margin-bottom: 10px; }
+  .links-banner .link-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .links-banner .link-icon { font-size: 28px; flex-shrink: 0; }
+  .links-banner .link-text { font-size: 15px; font-weight: 600; color: var(--text); flex: 1; }
+  .links-banner .link-desc { font-size: 12px; color: var(--muted); font-weight: 400; }
+  .links-banner .link-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 80px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🤝</div>
+    <div class="header-text">
+      <h1>People-Pleasing Personality &middot; 討好型人格研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年11月3日</span>
+        <span class="badge badge-count">📊 5 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻雖無直接探討「討好型人格」標籤之研究，但核心機制高度重疊：第一篇論文實證驗證了童年創傷透過「拒絕敏感度」（人際迎合核心機制）與「經驗性迴避」（情感調節失調）循序中介邊緣型人格特質，精準對應討好型人格的害怕拒絕與自我壓抑路徑；其餘文獻涵蓋憂鬱症客觀評估、失智照護、數位哀悼及青少年父母心理適應，呈現創傷、依附、人際敏感的跨領域應用趨勢。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div><div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#1</span>
+    <span class="emoji-icon">🧩</span>
+    <span class="utility-high">高實用性</span>
+  </div>
+  <h3>童年創傷與邊緣型人格特質：拒絕敏感度與經驗性迴避的調節中介模型</h3>
+  <p class="journal-source">European Journal of Psychotraumatology &middot; Childhood trauma and borderline personality disorder features: a moderated-mediation model of rejection sensitivity and experiential avoidance.</p>
+  <p>大樣本實證證實童年創傷透過拒絕敏感度（人際層面）與經驗性迴避（情感層面）循序中介預測BPD特質，且耐受痛苦力無法緩衝此惡性循環，直擊討好型人格核心病理機制。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">869名大學生（19-35歲），非臨床樣本</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入（橫斷面中介模型驗證：拒絕敏感度、經驗性迴避為中介變項；耐受痛苦力為調節變項）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">模型比較：單一中介 vs. 循序中介 vs. 調節中介模型</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">邊緣型人格特質 (BPI量表)；創傷→拒絕敏感度→經驗性迴避→BPD特質路徑顯著，耐受痛苦力調節效果不顯著</span></div>
+</div>
+  <p class="utility-reason">💡 精準描繪討好型人格核心路徑（害怕拒絕→情感迴避→人格病理），直接指引臨床優先處理經驗性迴避而非單純增強耐受力，適用於基模治療、DBT及ACT案例概念化。</p>
+  <div class="card-footer">
+    <span class="tag">創傷</span><span class="tag">複雜性創傷後壓力症候群</span><span class="tag">害怕拒絕</span><span class="tag">自我壓抑</span><span class="tag">情感調節</span><span class="tag">依附焦慮</span><span class="tag">人際敏感</span><span class="tag">心理治療</span><span class="tag">基模治療</span><span class="tag">認知行為治療</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42968694/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#2</span>
+    <span class="emoji-icon">👁️</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>運用眼動追蹤客觀評估憂鬱症狀：探索性初步研究</h3>
+  <p class="journal-source">Journal of Affective Disorders &middot; Objective assessment of depressive symptoms using eye-tracking features: An exploratory pilot study.</p>
+  <p>眼動追蹤技術發現自殺意念與威脅性圖片注視時長相關，快樂缺乏與憤怒臉孔首次注視潛伏期相關，為討好型人格常見共病憂鬱症提供客觀生理指標潛力。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">74名重性憂鬱症患者 vs 80名健康對照組</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">自由觀看任務與視覺搜尋任務（眼動追蹤測量）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">患者組 vs 對照組；不同症狀嚴重度亞組</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">眼動指標（注視時長、潛伏期）與漢密頓憂鬱量表、快樂缺乏量表、睡眠品質、焦慮張力分數相關性</span></div>
+</div>
+  <p class="utility-reason">💡 提供憂鬱症狀（含自殺風險）的客觀量化工具雛形，可輔助評估討好型人格個案常隱藏的憂鬱與自殺風險，但尚需大樣本驗證才能臨床應用。</p>
+  <div class="card-footer">
+    <span class="tag">憂鬱症</span><span class="tag">自殺風險</span><span class="tag">神經科學</span><span class="tag">情感調節</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42971366/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#3</span>
+    <span class="emoji-icon">🎵</span>
+    <span class="utility-mid">中實用性</span>
+  </div>
+  <h3>失智症照護中的音樂介入實務框架</h3>
+  <p class="journal-source">Home Healthcare Now &middot; Music-Based Interventions for People Living With Dementia.</p>
+  <p>提供居家護理師跨階段實施音樂介入的實務指引，強調個人化播放清單可減少激動、焦慮、憂鬱，並促進社交參與，展現非藥物介入對情感調節與關係連結的療癒力。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">失智症患者（早、中、晚期）及其居家照護者</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">音樂介入（評估偏好、個人化播放清單、融入日常照護活動）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">常規照護 vs 音樂介入整合照護</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">激動、焦慮、憂鬱、睡眠障礙減少；社交參與、情緒改善；照護者負擔緩解</span></div>
+</div>
+  <p class="utility-reason">💡 雖非直接針對討好型人格，但展示「情感連結與個人化介入」如何調節情緒與改善關係品質，原理可延伸至人際迎合個案的自我照顧與邊界建立練習。</p>
+  <div class="card-footer">
+    <span class="tag">情感調節</span><span class="tag">親密關係</span><span class="tag">心理治療</span><span class="tag">非藥物介入</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42970524/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#4</span>
+    <span class="emoji-icon">🕯️</span>
+    <span class="utility-low">低實用性</span>
+  </div>
+  <h3>「用圖示說我愛你」：數位祭品與想像溝通的關係性生產</h3>
+  <p class="journal-source">Omega &middot; "Saying 'I Love you' With Icons": Imagined Communication and the Relational Production of Digital Offerings.</p>
+  <p>質性研究揭示中國虛擬紀念館中數位祭品如何重塑哀悼為個體化、頻頻、靈活的中介實踐，促進自我療癒、孝道與連結性哀悼，展現數位時代依附關係延續與情感勞動的新樣態。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">喪親父母及虛擬紀念館使用者</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">數位祭品供奉與虛擬紀念館互動（持續4年網路觀察、自我民族誌、深度訪談）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">傳統哀悼儀式 vs 數位中介哀悼實踐</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">哀悼轉化為個體化、網絡化、商品化交織的關係實踐；形成創傷共享的情感社群；促進自我療癒與社會支持</span></div>
+</div>
+  <p class="utility-reason">💡 提供哀悼與依附延續的文化情境理解，對處理討好型人格個案的喪失、罪惡感、持續連結需求有理論參考價值，但缺乏直接臨床介入指引。</p>
+  <div class="card-footer">
+    <span class="tag">依附關係</span><span class="tag">喪失哀悼</span><span class="tag">情感勞動</span><span class="tag">集體主義</span><span class="tag">罪惡感</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42970002/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div>
+<div class="news-card featured">
+  <div class="card-header">
+    <span class="rank-badge">#5</span>
+    <span class="emoji-icon">🌍</span>
+    <span class="utility-low">低實用性</span>
+  </div>
+  <h3>南非林波波鄉村中學青少年父母的心理經驗：質性研究</h3>
+  <p class="journal-source">African Journal of Reproductive Health &middot; Psychological experiences of teenage parents attending a rural secondary school in Limpopo, South Africa: A qualitative study.</p>
+  <p>訪談18位青少年父母揭露羞恥、隱瞞、汙名化與依賴母系家庭支持的四大主題，凸顯同儕接納壓力導致早早性關係，呼應討好型人格在集體主義文化下的順從與自我犧牲模式。</p>
+  <div class="pico-grid">
+  <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">15位青少年媽媽、3位青少年爸爸（就讀鄉村中學）</span></div>
+  <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入（半結構式深度訪談，主題分析）</span></div>
+  <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同性別、家庭支持程度、學校/社區汙名化程度的經驗比較</span></div>
+  <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">四主題：情感社會衝擊、同儕社會影響、汙名與評判、應對與韌性（母系支持為關鍵保護因子）</span></div>
+</div>
+  <p class="utility-reason">💡 提供跨文化視角理解集體主義下青少年順從、羞恥與依賴母系支持的動態，可作為討好型人格在家庭/文化脈絡下案例概念化的擴展參考。</p>
+  <div class="card-footer">
+    <span class="tag">集體主義</span><span class="tag">羞愧感</span><span class="tag">自我犧牲</span><span class="tag">依賴型人格</span><span class="tag">社會焦慮</span><span class="tag">創傷</span>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/42968589/" target="_blank" rel="noopener">閱讀原文 →</a>
+  </div>
+</div></div>
+
+  
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div><div class="topic-row">
+  <span class="topic-name">創傷</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">害怕拒絕</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">自我壓抑</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情感調節</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+  <span class="topic-count">3</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">依附焦慮</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">憂鬱症</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">依附關係</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">集體主義</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">羞愧感</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">罪惡感</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">人際敏感</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">自我犧牲</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">情感勞動</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">神經科學</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">心理治療</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+  <span class="topic-count">2</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">認知行為治療</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div>
+<div class="topic-row">
+  <span class="topic-name">基模治療</span>
+  <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+  <span class="topic-count">1</span>
+</div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">拒絕敏感度</span><span class="keyword">經驗性迴避</span><span class="keyword">邊緣型人格特質</span><span class="keyword">童年創傷</span><span class="keyword">眼動追蹤</span><span class="keyword">憂鬱症客觀評估</span><span class="keyword">音樂介入</span><span class="keyword">失智症照護</span><span class="keyword">數位哀悼</span><span class="keyword">青少年父母</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <span><span class="link-text">李政洋身心診所</span><br/><span class="link-desc">專業身心科門診服務</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <span><span class="link-text">訂閱電子報</span><br/><span class="link-desc">收到最新心理健康資訊</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <span><span class="link-text">Buy Me a Coffee</span><br/><span class="link-desc">支持我們繼續產出優質內容</span></span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-ultra-550b-a55b</span>
+    <span><a href="https://github.com/u8901006/people-pleasing-personality">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
